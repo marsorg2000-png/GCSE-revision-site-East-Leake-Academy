@@ -1,107 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Germany: 1890–1945 | East Leake Academy</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f4f6f9;
-            color: #333;
-            margin: 0;
-            padding: 0;
+    <title>East Leake Academy - Germany: 1890–1945 Textbook Revision</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        history: {
+                            bg: '#F5F2EB',
+                            card: '#FAF7F2',
+                            border: '#D8CEBC',
+                            brown: '#5A4532',
+                            darkbrown: '#2B201A',
+                            green: '#2E6F40',
+                            red: '#B83A2B',
+                        }
+                    }
+                }
+            }
         }
-        header {
-            background-color: #1a365d;
-            color: white;
-            text-align: center;
-            padding: 2.5rem 1rem;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.2rem;
-        }
-        header p {
-            margin: 0.5rem 0 0;
-            font-size: 1.1rem;
-            color: #cbd5e1;
-        }
-        .container {
-            max-width: 800px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-        .back-link {
-            display: inline-block;
-            margin-bottom: 1.5rem;
-            color: #2563eb;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .back-link:hover {
-            text-decoration: underline;
-        }
-        .hub-card {
-            background: white;
-            border-radius: 8px;
-            padding: 2rem;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-            text-align: center;
-        }
-        .hub-card h2 {
-            color: #1a365d;
-            margin-top: 0;
-            font-size: 1.8rem;
-        }
-        .hub-card p {
-            color: #4b5563;
-            margin-bottom: 2rem;
-        }
-        .button-group {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-        }
-        .unit-btn {
-            background-color: #2563eb;
-            color: white;
-            padding: 1rem 1.5rem;
-            text-decoration: none;
-            border-radius: 6px;
-            font-size: 1.1rem;
-            font-weight: bold;
-            transition: background-color 0.2s ease, transform 0.2s ease;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-        .unit-btn:hover {
-            background-color: #1d4ed8;
-            transform: translateY(-2px);
-        }
-    </style>
+    </script>
 </head>
-<body>
+<body class="bg-[#F5F2EB] text-[#2B201A] font-sans antialiased min-h-screen flex flex-col justify-between selection:bg-[#2E6F40] selection:text-white">
 
-    <header>
-        <h1>Germany: 1890–1945</h1>
-        <p>AQA GCSE History Textbook Units</p>
+    <!-- Header / Nav -->
+    <header class="sticky top-0 z-50 bg-[#FAF7F2]/90 backdrop-blur-md border-b border-[#D8CEBC]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <a href="index.html" class="w-10 h-10 rounded-xl bg-gradient-to-br from-[#2E6F40] to-[#255A33] flex items-center justify-center text-white shadow-md shadow-[#2E6F40]/20 hover:opacity-90 transition">
+                    <i class="fa-solid fa-arrow-left text-sm"></i>
+                </a>
+                <div>
+                    <span class="font-bold text-base sm:text-lg tracking-tight text-[#2B201A]">Germany: 1890–1945</span>
+                    <span class="hidden sm:inline-block text-xs uppercase tracking-widest font-semibold ml-2 px-2 py-0.5 bg-[#E2D6C3] text-[#5A4532] rounded-full">Textbook Info</span>
+                </div>
+            </div>
+            <nav class="hidden md:flex items-center space-x-6 text-sm font-medium text-[#5A4532]">
+                <a href="index.html" class="hover:text-[#2E6F40] transition"><i class="fa-solid fa-house mr-1"></i> Hub Home</a>
+                <a href="#section1" class="hover:text-[#2E6F40] transition">Kaiser Wilhelm</a>
+                <a href="#section2" class="hover:text-[#2E6F40] transition">Weimar Republic</a>
+                <a href="#section3" class="hover:text-[#2E6F40] transition">Nazi Dictatorship</a>
+            </nav>
+        </div>
     </header>
 
-    <div class="container">
-        <a href="index.html" class="back-link">&larr; Back to Main Revision Hub</a>
-
-        <div class="hub-card">
-            <h2>Select a Textbook Unit</h2>
-            <p>Choose a unit below to access deep-dive notes, revision materials, and practice questions.</p>
-            
-            <div class="button-group">
-                <a href="germany-unit1.html" class="unit-btn">Unit 1: Germany and the Kaiser (1890–1914)</a>
-                <a href="germany-unit2.html" class="unit-btn">Unit 2: The Weimar Republic (1918–1933)</a>
-                <a href="germany-unit3.html" class="unit-btn">Unit 3: Hitler and the Nazi Dictatorship (1933–1945)</a>
-            </div>
+    <!-- Main Content -->
+    <main class="flex-grow max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        
+        <!-- Page Title Banner -->
+        <div class="bg-[#FAF7F2] rounded-2xl border border-[#D8CEBC] p-8 mb-10 shadow-sm">
+            <span class="inline-flex items-center space-x-2 px-3.5 py-1 rounded-full bg-[#E2D6C3] text-[#5A4532] text-xs font-semibold mb-4 border border-[#CFC0A9]">
+                <i class="fa-solid fa-book-open text-[#2E6F40]"></i>
+                <span>Core Textbook Content</span>
+            </span>
+            <h1 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-[#2B201A] mb-4">
+                Germany: 1890–1945 Textbook Revision
+            </h1>
+            <p class="text-[#5C4D44] text-base leading-relaxed">
+                Welcome to the comprehensive textbook revision hub for East Leake Academy GCSE History students. Use the detailed sections below to guide your deep-dive reading and revision notes.
+            </p>
         </div>
-    </div>
+
+        <!-- Textbook Section 1 -->
+        <section id="section1" class="bg-[#FAF7F2] rounded-2xl border border-[#D8CEBC] p-8 mb-8 shadow-sm">
+            <div class="flex items-center space-x-3 mb-4">
+                <div class="w-8 h-8 rounded-lg bg-[#EFE9DF] text-[#2E6F40] flex items-center justify-center font-bold text-sm">1</div>
+                <h2 class="text-2xl font-bold text-[#2B201A]">Germany and the Kaiser (1890–1914)</h2>
+            </div>
+            <div class="space-y-4 text-[#5C4D44] text-sm leading-relaxed">
+                <p>
+                    <strong>Autocracy and Power:</strong> Kaiser Wilhelm II believed in the divine right of kings and wanted personal control over policy (Weltpolitik). He dismissed Chancellor Otto von Bismarck in 1890 to steer Germany independently.
+                </p>
+                <p>
+                    <strong>Industrialisation & Militarism:</strong> Rapid industrial growth saw Germany surpass Britain in iron, steel, and electrical output by 1914. This economic boom fueled an aggressive naval race against Britain via the Naval Laws.
+                </p>
+            </div>
+        </section>
+
+        <!-- Textbook Section 2 -->
+        <section id="section2" class="bg-[#FAF7F2] rounded-2xl border border-[#D8CEBC] p-8 mb-8 shadow-sm">
+            <div class="flex items-center space-x-3 mb-4">
+                <div class="w-8 h-8 rounded-lg bg-[#EFE9DF] text-[#B83A2B] flex items-center justify-center font-bold text-sm">2</div>
+                <h2 class="text-2xl font-bold text-[#2B201A]">The Weimar Republic (1919–1929)</h2>
+            </div>
+            <div class="space-y-4 text-[#5C4D44] text-sm leading-relaxed">
+                <p>
+                    <strong>Foundation and Crises:</strong> Formed out of the revolution of 1918–1919, the Weimar Republic faced immediate instability. The Treaty of Versailles (1919) crippled morale, while hyperinflation in 1923 and early uprisings tested its democratic framework.
+                </p>
+                <p>
+                    <strong>The Golden Years (1924–1929):</strong> Under Gustav Stresemann, Germany experienced economic recovery supported by American loans (Dawes Plan), cultural expression, and diplomatic rehabilitation (Locarno Pact).
+                </p>
+            </div>
+        </section>
+
+        <!-- Textbook Section 3 -->
+        <section id="section3" class="bg-[#FAF7F2] rounded-2xl border border-[#D8CEBC] p-8 mb-8 shadow-sm">
+            <div class="flex items-center space-x-3 mb-4">
+                <div class="w-8 h-8 rounded-lg bg-[#EFE9DF] text-[#2E6F40] flex items-center justify-center font-bold text-sm">3</div>
+                <h2 class="text-2xl font-bold text-[#2B201A]">Hitler and the Nazi Dictatorship (1933–1945)</h2>
+            </div>
+            <div class="space-y-4 text-[#5C4D44] text-sm leading-relaxed">
+                <p>
+                    <strong>Rise to Power:</strong> Capitalising on the Great Depression, Hitler exploited public fear of communism. Following the Reichstag Fire and the Enabling Act (1933), democracy was dismantled.
+                </p>
+                <p>
+                    <strong>Control and Terror:</strong> Nazi rule relied on a powerful police state (SS, Gestapo), relentless propaganda (Goebbels), and social regimentation (Hitler Youth, Lebensraum ideology).
+                </p>
+            </div>
+        </section>
+
+        <!-- Back to Hub Button -->
+        <div class="text-center mt-12">
+            <a href="index.html" class="inline-flex items-center space-x-2 px-6 py-3 rounded-xl bg-[#2E6F40] hover:bg-[#255A33] text-white font-semibold shadow-md transition">
+                <i class="fa-solid fa-arrow-left"></i>
+                <span>Return to Revision Hub</span>
+            </a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#FAF7F2] border-t border-[#D8CEBC] py-8 px-4 sm:px-6 lg:px-8 text-center text-[#7A6658] text-sm">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p>&copy; 2026 East Leake Academy History Department. All rights reserved.</p>
+            <a href="index.html" class="hover:text-[#2E6F40] transition font-medium">Home Hub</a>
+        </div>
+    </footer>
 
 </body>
 </html>
